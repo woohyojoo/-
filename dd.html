@@ -1,0 +1,171 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>에버랜드 소개</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">에버랜드 소개</a></li>
+				<li><a href="#movie" data-rel="dialog">영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">음악</a></li>
+				<li><a href="#gallery">사진</a></li>
+				<li><a href="#wizard3-2" data-rel="dialog">실시간 할인정보</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>에버랜드 소개하기 _ 우효주</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="11.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>에버랜드 오시는길</h3>
+				<p>수원,ak플라자</p>	<img src="22.jpg"> <p>고양,화정 터미널</p> <img src="33.jpg">
+				</div>
+				<div data-role="collapsible">
+					<h3>에버랜드 지도</h3>
+					<img width="500" height="300" src="44.jpg" > <p>에버랜드에는 글로벌피어, 아메리칸 어드벤쳐, 매직랜드, 유러피안 어드벤쳐, 주토피아로 나뉘어져 있다.</p>
+				</div>
+								<div data-role="collapsible" >
+					<h3>에버랜드 채용안내</h3>
+					<p>I-Cast(단기상시직)를 다음과 같이 모집하오니 많은 관심과 지원 부탁드립니다.</br>
+
+□ 근무기간</br>
+ 입사시(4~6월) ~ 4개월 내외(9~10월)</br>
+□ 모집 유형</br>
+I-Cast</br>
+    - 시급: 8,400원 ~ 8,800원</br>
+   (주휴수당 포함 시 10,080원 ~ 10,560원)</br>
+
+□ 혜택</br>
+   1. 무료 셔틀버스 운행(서울, 분당, 수원, 용인)</br>
+    2. 원거리 근무자 기숙사 입주 가능</br>
+   3. 식사제공(월40식)</br>
+    4. 만근 시 복리후생 티켓 제공(연간회원권 2매, 에버랜드 5매, 캐리비안베이 3매)</br>
+    5. 근무 우수자 재입사 시 채용 우대</br>
+
+□ 문의처
+ 에버랜드 캐스팅센터 * Tel. 031-320-8410~1
+
+ □ 신청방법
+ 서류지원시 I-Cast(단기상시직)로 선택하여 지원</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>에버랜드 소개하기 _ 우효주</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>에버랜드 영상</h1>
+		</div>
+		<div data-role="content" >
+			<p>에버랜드실시간 스트리밍</p>
+			<img width="450" height="300" height="320"src="55.jpg"> <a  href="http://www.everland.com/web/intro.html">에버랜드 사이트 이동하기 클릭</a>
+			<li><iframe width="	90%"height="240"  src="https://www.youtube.com/embed/L263o_Nu830" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>"></iframe></li><br/>
+			<p>유튜브 실시간 스트리밍 </p>
+		
+			
+		</li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>에버랜드 노래</h1>
+		</div>
+		<div data-role="content" >
+			<p>에버랜드 로고송</p>
+			<img width="550" height="320"src="55.jpg"><a href="http://www.everland.com/web/intro.html">에버랜드 사이트 이동하기 클릭 </a>
+			<li> <iframe width="	90%" height="315" src="https://www.youtube.com/embed/RFjK_Wz68EM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>"></iframe></li><br/>
+			<p>"환상의 나라 에버랜드로 오세요 로고송" </p></br>
+			
+				
+			</li>
+			
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	
+
+	
+
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>에버랜드 사진 </h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+		<li> <img width="300" height="200" src="88"></li>
+				<li> <img width="300" height="200" src=".jpg"></li>
+				<li> <img width="300" height="200" src="99.jpg"></li>
+				<li> <img width="300" height="200" src="10.jpg"></li>
+				<li> <img width="300" height="200" src="888.jpg"></li>
+				<li> <img width="300" height="200" src="999.jpg"></li>
+				
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>에버랜드 소개하기 _ 우효주 </h1>
+		</div>		
+	</div>
+			
+	
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>에버랜드 실시간 할인정보</h1>
+		</div>
+		<div data-role="content" >
+		
+			<a href="http://www.everland.com/web/everland/how/partnership/card1/samsung.html">할인 더 알아보기</a>
+			
+			
+		</div>
+		<div data-role="footer">
+	
+		</div>
+	</div>
+</div>
+		
+</body>
+</html>
