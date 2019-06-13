@@ -31,6 +31,7 @@
 				<li><a href="#wizard3-1" data-rel="dialog">음악</a></li>
 				<li><a href="#gallery">사진</a></li>
 				<li><a href="#wizard3-2" data-rel="dialog">실시간 할인정보</a></li>
+				<li><a href="#good" >어서오세용</a></li>
 			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed" data-theme="b">
@@ -165,7 +166,39 @@ I-Cast</br>
 	
 		</div>
 	</div>
-</div>
+	
+	
+	
+	
+	<div data-role="page" id="good">
+	<h1>어서오세용</h1>
+	
+	<script>
+	$(document).ready( function() {  
+		// show/hide/toggle 효과	
+		$('#hide').click(function() {
+				$('input[name="text1"]').hide(600);
+		});		
+		$('#show').click(function() {
+				$('input[name="text1"]').show(1000);
+		});					
+		$('#toggle').click(function() {
+				$('input[name="text1"]').toggle(2000);
+		});					
+	});
+</script>
+																	
+<body>	
+	show/hide/toggle 효과
+		<button id="hide"> hide </button>			
+		<button id="show"> show </button>		
+		<button id="toggle"> toggle </button>		
+		<div><input type="text" name="text1" value="어서오세용"/></div>
+</body>											
+		</div>
+	
+	
+	
 		
 </body>
 </html>
